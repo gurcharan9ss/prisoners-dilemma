@@ -1,0 +1,94 @@
+.player-selection {
+  text-align: center;
+  padding: 2em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.player-selection::before {
+      content: '';
+  position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle, rgba(255, 0, 179, 0.4), transparent 60%);
+      filter: blur(50px);
+      opacity: 0.6;
+      pointer-events: none;
+}
+  
+.player-img {
+  width: 400px;
+  height: auto;
+  
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+button.btn-primary {
+  background-color: #724bff;
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #502ecc;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #724bff ;
+  position: absolute;
+  bottom: -40px; /* Adjust this value as needed */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #502ecc ;
+  position: absolute;
+  bottom: -40px; /* Adjust this value as needed */
+}
+
+.carousel-control-prev {
+  
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.carousel-control-next {
+  right: 30%;
+  transform: translateX(50%);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  bottom: 10px; /* Adjust this value as needed to position the buttons at the bottom */
+}
+.carousel {
+  position: relative;
+  padding-bottom: 60px; /* Adjust this value as needed to make space for the buttons */
+  text-align: center; /* Center the carousel content */
+}

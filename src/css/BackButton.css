@@ -1,0 +1,23 @@
+.back-button {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .back-button {
+      font-size: 1rem;
+    }
+  }
+  

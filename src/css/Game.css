@@ -1,0 +1,54 @@
+.game {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .players {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .player-info {
+    font-size: 1.2rem;
+  }
+  
+  .rounds {
+    margin: 20px 0;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button:hover {
+    background-color: #0056b3;
+  }
+  .player-info {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .player-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+  }
+  

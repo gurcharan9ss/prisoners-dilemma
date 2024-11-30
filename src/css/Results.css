@@ -1,0 +1,54 @@
+.results {
+  text-align: center;
+  margin: 20px;
+}
+
+.results h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.players-results {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.player-result {
+  text-align: center;
+ 
+ 
+  padding: 20px;
+  width: 45%;
+  
+}
+
+.player-result h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.player-image {
+  width: 150px;
+  height: 150px;
+ 
+  margin-bottom: 10px;
+ 
+}
+
+.player-result p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.results-buttons {
+  margin-top: 20px;
+}
+
+.results-buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}

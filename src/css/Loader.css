@@ -1,0 +1,85 @@
+/* Loader.css */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.wand {
+  position: relative;
+  width: 10px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: wand-move 1.5s infinite;
+}
+
+.sparkles {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+  animation: sparkle 1s infinite;
+}
+
+.sparkle1 {
+  top: 0;
+  left: 50%;
+  animation-delay: 0s;
+}
+
+.sparkle2 {
+  top: 20px;
+  left: 60%;
+  animation-delay: 0.2s;
+}
+
+.sparkle3 {
+  top: 40px;
+  left: 40%;
+  animation-delay: 0.4s;
+}
+
+.sparkle4 {
+  top: 60px;
+  left: 55%;
+  animation-delay: 0.6s;
+}
+
+.sparkle5 {
+  top: 80px;
+  left: 45%;
+  animation-delay: 0.8s;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+@keyframes wand-move {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.5);
+    opacity: 0.5;
+  }
+}

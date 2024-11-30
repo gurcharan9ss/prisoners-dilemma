@@ -1,0 +1,22 @@
+.graph-page {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .graph-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  .graph-size {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto !important;
+    height: 400px !important;
+  }
