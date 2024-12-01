@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import '../css/Game.css';
 import img1 from '../images/im.png';
 import img2 from '../images/sw1.png';
@@ -97,8 +98,12 @@ export default function GameSetup({ player1, player2, setRounds, setGameData }) 
 
   // Start the game
   const handleStartGame = () => {
-    if (!rounds || rounds <= 0) {
-      alert('Please enter a valid number of rounds.');
+    if (!rounds || rounds <= 9) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Input',
+        text: 'Number of rounds must be at least 10.',
+      });
       return;
     }
 

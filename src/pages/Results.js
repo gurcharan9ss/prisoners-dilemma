@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../css/Results.css';
-import Loader from '../components/Loader';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "../css/Results.css";
+import Loader from "../components/Loader";
 
-import img1 from '../images/im.png';
-import img2 from '../images/sw1.png';
-import img3 from '../images/ca.png';
-import img4 from '../images/loki.png';
-import img5 from '../images/dp1.png';
-
+import img1 from "../images/im.png";
+import img2 from "../images/sw1.png";
+import img3 from "../images/ca.png";
+import img4 from "../images/loki.png";
+import img5 from "../images/dp1.png";
 
 export default function Results({ gameData }) {
   const navigate = useNavigate();
@@ -17,8 +16,8 @@ export default function Results({ gameData }) {
     "Iron Man": img1,
     "Scarlet Witch": img2,
     "Captain America": img3,
-    "Loki": img4,
-    "Deadpool": img5
+    Loki: img4,
+    Deadpool: img5,
   };
   const [loading, setLoading] = useState(true);
 
@@ -45,10 +44,18 @@ export default function Results({ gameData }) {
             alt={`Player 1 - ${gameData.player1}`}
             className="player-image"
           />
-          <p><strong>Name:</strong> {gameData.player1}</p>
-          <p><strong>Score:</strong> {gameData.player1Score}</p>
-          <p><strong>Cooperate Count:</strong> {gameData.player1CooperateCount}</p>
-          <p><strong>Defect Count:</strong> {gameData.player1DefectCount}</p>
+          <p>
+            <strong>Name:</strong> {gameData.player1}
+          </p>
+          <p>
+            <strong>Score:</strong> {gameData.player1Score}
+          </p>
+          <p>
+            <strong>Cooperate Count:</strong> {gameData.player1CooperateCount}
+          </p>
+          <p>
+            <strong>Defect Count:</strong> {gameData.player1DefectCount}
+          </p>
         </div>
 
         {/* Player 2 */}
@@ -59,22 +66,32 @@ export default function Results({ gameData }) {
             alt={`Player 2 - ${gameData.player2}`}
             className="player-image"
           />
-          <p><strong>Name:</strong> {gameData.player2}</p>
-          <p><strong>Score:</strong> {gameData.player2Score}</p>
-          <p><strong>Cooperate Count:</strong> {gameData.player2CooperateCount}</p>
-          <p><strong>Defect Count:</strong> {gameData.player2DefectCount}</p>
+          <p>
+            <strong>Name:</strong> {gameData.player2}
+          </p>
+          <p>
+            <strong>Score:</strong> {gameData.player2Score}
+          </p>
+          <p>
+            <strong>Cooperate Count:</strong> {gameData.player2CooperateCount}
+          </p>
+          <p>
+            <strong>Defect Count:</strong> {gameData.player2DefectCount}
+          </p>
         </div>
       </div>
 
       <div className="results-buttons">
-        <button className="btn btn-primary" onClick={() => navigate('/')}>
+        <button className="btn btn-primary" onClick={() => navigate("/")}>
           Back to Home
         </button>
-        <button className="btn btn-secondary" onClick={() => navigate('/graph')}>
+        <button
+          className="btn btn-secondary"
+          onClick={() => navigate("/graph")}
+        >
           View Graph
         </button>
       </div>
     </div>
   );
 }
-
