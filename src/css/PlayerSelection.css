@@ -39,7 +39,9 @@ button.btn-primary {
   border: none;
 }
 
-button.btn-primary:hover {
+
+
+button.btn-primary:hover, button.btn-secondary:hover  {
   background-color: #502ecc;
 }
 

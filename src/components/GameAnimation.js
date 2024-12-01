@@ -1,6 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/GameAnimation.css';
+import ironMan from '../images/im.png';
+import scarletWitch from '../images/sw1.png';
+import captainAmerica from '../images/ca.png';
+import loki from '../images/loki.png';
+import deadpool from '../images/dp1.png';
+
+const characterImages = {
+  'Iron Man': ironMan,
+  'Scarlet Witch': scarletWitch,
+  'Captain America': captainAmerica,
+  'Loki': loki,
+  'Deadpool': deadpool,
+};
 
 export default function GameAnimation({ gameData }) {
   const navigate = useNavigate();
@@ -30,16 +43,22 @@ export default function GameAnimation({ gameData }) {
 
   return (
     <div className="animation-container">
-      <h2>Game Animation</h2>
+      <h2>Game Playing</h2>
       {currentRound < 10 ? (
         <div className="round-display">
           <h3>Round {currentRound + 1}</h3>
-          <p>
-            <strong>{player1Name}</strong>: {player1History[currentRound]}
-          </p>
-          <p>
-            <strong>{player2Name}</strong>: {player2History[currentRound]}
-          </p>
+          <div className="players">
+            <div className={`player ${player1History[currentRound]}`}>
+              <img src={characterImages[player1Name]} alt={player1Name} className="character-image" />
+              <strong>{player1Name}</strong>
+              <p className="action-text">{player1History[currentRound]}</p>
+            </div>
+            <div className={`player ${player2History[currentRound]}`}>
+              <img src={characterImages[player2Name]} alt={player2Name} className="character-image" />
+              <strong>{player2Name}</strong>
+              <p className="action-text">{player2History[currentRound]}</p>
+            </div>
+          </div>
         </div>
       ) : (
         <div className="animation-end">
