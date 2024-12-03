@@ -16,8 +16,8 @@ export default function Results({ gameData }) {
     "Iron Man": img1,
     "Scarlet Witch": img2,
     "Captain America": img3,
-    Loki: img4,
-    Deadpool: img5,
+    "Loki": img4,
+    "Deadpool": img5,
   };
   const [loading, setLoading] = useState(true);
 
@@ -42,7 +42,7 @@ export default function Results({ gameData }) {
           <img
             src={images[gameData.player1]}
             alt={`Player 1 - ${gameData.player1}`}
-            className="player-image"
+            className="character-img"
           />
           <p>
             <strong>Name:</strong> {gameData.player1}
@@ -64,7 +64,7 @@ export default function Results({ gameData }) {
           <img
             src={images[gameData.player2]}
             alt={`Player 2 - ${gameData.player2}`}
-            className="player-image"
+            className="character-img"
           />
           <p>
             <strong>Name:</strong> {gameData.player2}

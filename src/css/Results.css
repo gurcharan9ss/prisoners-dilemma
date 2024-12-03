@@ -52,3 +52,88 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+.character-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.character-img:hover {
+  transform: scale(1.1);
+}
+
+.character-img[src*="im"] {
+  filter: drop-shadow(0 0 20px yellow) drop-shadow(0 0 40px red);
+}
+
+.character-img[src*="sw1"] {
+  filter: drop-shadow(0 0 20px red);
+}
+
+.character-img[src*="ca"] {
+  filter: drop-shadow(0 0 20px blue);
+}
+
+.character-img[src*="loki"] {
+  filter: drop-shadow(0 0 20px gold) drop-shadow(0 0 40px green);
+}
+
+.character-img[src*="dp"] {
+  filter: drop-shadow(0 0 20px red);
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  animation: logo-spin infinite 2s linear, logo-blend 5s infinite alternate;
+  filter: drop-shadow(0 0 10px #fff) brightness(1.2);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-blend {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.glowing-txt {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+}
+
+.faulty-letter {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+}

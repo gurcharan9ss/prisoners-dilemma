@@ -136,13 +136,13 @@ export default function GameSetup({ player1, player2, setRounds, setGameData }) 
 
   return (
     <div className="game">
-      <h2>Game Setup</h2>
+      <h2> Rounds </h2>
       <div className="players">
         <div className="player-info">
           <img
             src={playerImages[player1]}
             alt={`Player 1 - ${player1}`}
-            className="player-image"
+            className="character-img"
           />
           <h3>Player 1: {player1}</h3>
         </div>
@@ -150,13 +150,14 @@ export default function GameSetup({ player1, player2, setRounds, setGameData }) 
           <img
             src={playerImages[player2]}
             alt={`Player 2 - ${player2}`}
-            className="player-image"
+            className="character-img"
           />
           <h3>Player 2: {player2}</h3>
         </div>
       </div>
       <div className="rounds">
-        <label htmlFor="rounds">Enter Number of Rounds:</label>
+        <label htmlFor="rounds">Number of Rounds : &nbsp;</label>
+
         <input
           type="number"
           id="rounds"
@@ -165,7 +166,7 @@ export default function GameSetup({ player1, player2, setRounds, setGameData }) 
           placeholder="Enter a number"
         />
         <button className="btn btn-secondary random-button" onClick={generateRandomRounds}>
-          Generate Random Rounds
+          Random
         </button>
       </div>
       <button className="btn btn-primary start-button" onClick={handleStartGame}>

@@ -46,9 +46,36 @@
     margin: 20px;
   }
   
-  .player-image {
-    width: 150px;
-    height: 150px;
-    margin-top: 10px;
-  }
+ 
+   
   
+.character-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.character-img:hover {
+  transform: scale(1.1);
+}
+
+.character-img[src*="im"] {
+  filter: drop-shadow(0 0 20px yellow) drop-shadow(0 0 40px red);
+}
+
+.character-img[src*="sw1"] {
+  filter: drop-shadow(0 0 20px red);
+}
+
+.character-img[src*="ca"] {
+  filter: drop-shadow(0 0 20px blue);
+}
+
+.character-img[src*="loki"] {
+  filter: drop-shadow(0 0 20px gold) drop-shadow(0 0 40px green);
+}
+
+.character-img[src*="dp"] {
+  filter: drop-shadow(0 0 20px red);
+}
