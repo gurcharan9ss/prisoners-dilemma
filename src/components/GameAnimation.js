@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/GameAnimation.css';
 
+
 import ironMan from '../images/im.png';
 import scarletWitch from '../images/sw1.png';
 import captainAmerica from '../images/ca.png';
@@ -62,6 +63,7 @@ export default function GameAnimation({ gameData }) {
           </div>
         </div>
       ) : (
+
         <div className="animation-end">
           <h3>Game Over</h3>
           <p>Loading...</p>

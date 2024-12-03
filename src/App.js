@@ -4,10 +4,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Instructions from './pages/Instructions';
 import About from './pages/About';
-import PlayerSelection from './pages/PlayerSelection';
+import PlayerSelection from './components/PlayerSelection';
 import GameSetup from './components/GameSetup';
-import Results from './pages/Results';
-import Graph from './pages/Graph';
+import Results from './components/Results';
+import Graph from './components/Graph';
 import Loader from './components/Loader';
 import GameAnimation from './components/GameAnimation';
 
