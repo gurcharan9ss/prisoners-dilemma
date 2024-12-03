@@ -1,7 +1,8 @@
-import logo from '../logo.svg';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
+import '../css/Glow-button.css';
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,7 +18,18 @@ export default function Navbar() {
 
         <Link to="/" className="navbar-brand">
           
-          Prisoner's Dilemma
+ 
+
+          
+        <span class='glowing-txt'>P
+          
+          <span class='faulty-letter'>ris</span>
+          oner
+          <span class='faulty-letter'>'s </span>
+          D
+          <span class='faulty-letter'>il</span>
+          emma
+          </span>
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

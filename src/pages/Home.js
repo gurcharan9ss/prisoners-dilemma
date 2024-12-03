@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/Home.css';
+import '../css/Glow-button.css';
 import ironMan from '../images/im.png';
 import scarletWitch from '../images/sw1.png';
 import captainAmerica from '../images/ca.png';
@@ -12,13 +13,8 @@ export default function Home() {
 
   return (
     <div className="home">
-      <h1>Prisoner's Dilemma Game</h1>
-      <button
-        className="btn btn-primary start-button"
-        onClick={() => navigate('/select-player-1')}
-      >
-        Start Game
-      </button>
+      <h1 className="heading">Prisoner's Dilemma Game</h1>
+      
       <div className="characters">
         <img src={ironMan} alt="Iron Man" className="character-img" />
         <img src={scarletWitch} alt="Scarlet Witch" className="character-img" />
@@ -26,6 +22,14 @@ export default function Home() {
         <img src={loki} alt="Loki" className="character-img" />
         <img src={deadpool} alt="Deadpool" className="character-img" />
       </div>
+      <br />
+
+      <button
+        className="glowing-btn"
+        onClick={() => navigate('/select-player-1')}
+      >
+        <span class='glowing-txt'>P<span class='faulty-letter'>l</span>ay<span class='faulty-letter'> G</span>ame</span>
+      </button>
     </div>
   );
 }
